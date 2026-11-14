@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/fbl" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/fbl" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/fbl" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="FnCheckTransExist">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="tranId" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnCheckTransExist_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnInsertatmlogentries">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="messageType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="accountID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="atmNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="authCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="amount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="reference" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="terminalID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="terminalLocation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="requestDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="responseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="posted" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="accountN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="messageID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutioncode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="channel" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="connectionmode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="narration1" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="narration2" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnInsertatmlogentries_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="GetFOSAAccount">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="cardNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="amount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="processCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFOSAAccount_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFOSANumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="cardNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFOSANumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InsertAtmtransaction">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="messageType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="accountID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mobile" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="authCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="amount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="reference" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="terminalID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="terminalLocation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="requestDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="responseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="posted" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="reversalTraceID" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="atm_No" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="narration1" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="narration2" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="channel" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InsertAtmtransaction_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Ministatement">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="maxno" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="cardNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Ministatement_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PostTrans">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="PostTrans_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getAvailableBal">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accountNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getAvailableBal_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getTransactionsLimit">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accountNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="amount" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getTransactionsLimit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="FnCheckTransExist">
+    <part name="parameters" element="tns:FnCheckTransExist" />
+  </message>
+  <message name="FnCheckTransExist_Result">
+    <part name="parameters" element="tns:FnCheckTransExist_Result" />
+  </message>
+  <message name="FnInsertatmlogentries">
+    <part name="parameters" element="tns:FnInsertatmlogentries" />
+  </message>
+  <message name="FnInsertatmlogentries_Result">
+    <part name="parameters" element="tns:FnInsertatmlogentries_Result" />
+  </message>
+  <message name="GetFOSAAccount">
+    <part name="parameters" element="tns:GetFOSAAccount" />
+  </message>
+  <message name="GetFOSAAccount_Result">
+    <part name="parameters" element="tns:GetFOSAAccount_Result" />
+  </message>
+  <message name="GetFOSANumber">
+    <part name="parameters" element="tns:GetFOSANumber" />
+  </message>
+  <message name="GetFOSANumber_Result">
+    <part name="parameters" element="tns:GetFOSANumber_Result" />
+  </message>
+  <message name="InsertAtmtransaction">
+    <part name="parameters" element="tns:InsertAtmtransaction" />
+  </message>
+  <message name="InsertAtmtransaction_Result">
+    <part name="parameters" element="tns:InsertAtmtransaction_Result" />
+  </message>
+  <message name="Ministatement">
+    <part name="parameters" element="tns:Ministatement" />
+  </message>
+  <message name="Ministatement_Result">
+    <part name="parameters" element="tns:Ministatement_Result" />
+  </message>
+  <message name="PostTrans">
+    <part name="parameters" element="tns:PostTrans" />
+  </message>
+  <message name="PostTrans_Result">
+    <part name="parameters" element="tns:PostTrans_Result" />
+  </message>
+  <message name="getAvailableBal">
+    <part name="parameters" element="tns:getAvailableBal" />
+  </message>
+  <message name="getAvailableBal_Result">
+    <part name="parameters" element="tns:getAvailableBal_Result" />
+  </message>
+  <message name="getTransactionsLimit">
+    <part name="parameters" element="tns:getTransactionsLimit" />
+  </message>
+  <message name="getTransactionsLimit_Result">
+    <part name="parameters" element="tns:getTransactionsLimit_Result" />
+  </message>
+  <portType name="fbl_Port">
+    <operation name="FnCheckTransExist">
+      <input name="FnCheckTransExist" message="tns:FnCheckTransExist" />
+      <output name="FnCheckTransExist_Result" message="tns:FnCheckTransExist_Result" />
+    </operation>
+    <operation name="FnInsertatmlogentries">
+      <input name="FnInsertatmlogentries" message="tns:FnInsertatmlogentries" />
+      <output name="FnInsertatmlogentries_Result" message="tns:FnInsertatmlogentries_Result" />
+    </operation>
+    <operation name="GetFOSAAccount">
+      <input name="GetFOSAAccount" message="tns:GetFOSAAccount" />
+      <output name="GetFOSAAccount_Result" message="tns:GetFOSAAccount_Result" />
+    </operation>
+    <operation name="GetFOSANumber">
+      <input name="GetFOSANumber" message="tns:GetFOSANumber" />
+      <output name="GetFOSANumber_Result" message="tns:GetFOSANumber_Result" />
+    </operation>
+    <operation name="InsertAtmtransaction">
+      <input name="InsertAtmtransaction" message="tns:InsertAtmtransaction" />
+      <output name="InsertAtmtransaction_Result" message="tns:InsertAtmtransaction_Result" />
+    </operation>
+    <operation name="Ministatement">
+      <input name="Ministatement" message="tns:Ministatement" />
+      <output name="Ministatement_Result" message="tns:Ministatement_Result" />
+    </operation>
+    <operation name="PostTrans">
+      <input name="PostTrans" message="tns:PostTrans" />
+      <output name="PostTrans_Result" message="tns:PostTrans_Result" />
+    </operation>
+    <operation name="getAvailableBal">
+      <input name="getAvailableBal" message="tns:getAvailableBal" />
+      <output name="getAvailableBal_Result" message="tns:getAvailableBal_Result" />
+    </operation>
+    <operation name="getTransactionsLimit">
+      <input name="getTransactionsLimit" message="tns:getTransactionsLimit" />
+      <output name="getTransactionsLimit_Result" message="tns:getTransactionsLimit_Result" />
+    </operation>
+  </portType>
+  <binding name="fbl_Binding" type="tns:fbl_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="FnCheckTransExist">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:FnCheckTransExist" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnCheckTransExist">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnCheckTransExist_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnInsertatmlogentries">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:FnInsertatmlogentries" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnInsertatmlogentries">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnInsertatmlogentries_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetFOSAAccount">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:GetFOSAAccount" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetFOSAAccount">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetFOSAAccount_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetFOSANumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:GetFOSANumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetFOSANumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetFOSANumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="InsertAtmtransaction">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:InsertAtmtransaction" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="InsertAtmtransaction">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="InsertAtmtransaction_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Ministatement">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:Ministatement" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Ministatement">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Ministatement_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PostTrans">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:PostTrans" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PostTrans">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PostTrans_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="getAvailableBal">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:getAvailableBal" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="getAvailableBal">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="getAvailableBal_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="getTransactionsLimit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/fbl:getTransactionsLimit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="getTransactionsLimit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="getTransactionsLimit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="fbl">
+    <port name="fbl_Port" binding="tns:fbl_Binding">
+      <address location="http://mutuku:7047/BC240/WS/UNITED%20WINNERS%20SACCO/Codeunit/fbl" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

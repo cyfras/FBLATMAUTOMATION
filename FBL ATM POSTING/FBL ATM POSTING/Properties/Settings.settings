@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FBL_ATM_POSTING.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FBL_ATM_POSTING_NAVWS_fbl" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://mutuku:7047/BC240/WS/UNITED%20WINNERS%20SACCO/Codeunit/fbl</Value>
+    </Setting>
+    <Setting Name="LoginUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">user</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cft021</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
